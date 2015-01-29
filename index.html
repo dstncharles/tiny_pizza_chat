@@ -5,9 +5,15 @@
   <title>Tiny Pizza Chat</title>
 </head>
 <body>
-  <div>
-
-  </div>
+  <ul class="tinyPizzaChatLog">
+    <script type="text/template" data-template-name="chat">
+      <li>
+        <%= message %>
+        <%= username %>
+        <%= createdAt %>
+      </li>
+    </script>
+  </ul>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script type="text/javascript" src="main.js"></script>

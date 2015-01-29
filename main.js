@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-var pizzaData = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
+  var pizzaUrl = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
 
 
 // $.ajax({
@@ -14,18 +14,24 @@ var pizzaData = "http://tiny-pizza-server.herokuapp.com/collections/greenville-c
 // })
 
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
 
 
-var chatTemplate = _.template($('[data-template-name=chat]').text());
-var $chatLogUl = $(".tinyPizzaChatLog");
-$.ajax(pizzaData).done(function(chatArray) {
-  _.each(chatArray, function(chatObject) {
-    $chatLogUl.append(chatTemplate(chatObject));
+    var chatTemplate = _.template($('[data-template-name=chat]').text());
+    var $chatLogUl = $(".tinyPizzaChatLog");
+    $.ajax(pizzaUrl).done(function(chatArray) {
+      _.each(chatArray, function(chatObject) {
+        _.defaults(chatObject, {
+          message: "",
+          username: "",
+          createdAt:""
+        });
+        $chatLogUl.append(chatTemplate(chatObject));
+      });
+    });
+
   });
-});
-});
 
 
 
