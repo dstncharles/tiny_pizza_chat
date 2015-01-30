@@ -6,24 +6,26 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <div class="message_box">
+    <div class="welcome">
+      <p>Welcome</p>
+      <textarea cols="100" rows="4" name="comment"></textarea><br />
+      <button>Submit</button>
+    </div>
+  </div>
   <div class="container">
     <div class="forum">
     <ul class="tinyPizzaChatLog">
       <script type="text/template" data-template-name="chat">
         <li>
-          <%= message %>
-          <%= username %>
-          <%= createdAt %>
+        <id="message">  <%= message %>
+          <id="username"><%= username %>
+          <id="createAt"><%= createdAt %>
         </li>
       </script>
     </ul>
   </div>
-    <div class="message_box">
-      <div class="welcome">
-        <p>Welcome</p>
-        <textarea cols="100" rows="2" name="comment"></textarea><button>Submit</button>
-      </div>
-    </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="main.js"></script>

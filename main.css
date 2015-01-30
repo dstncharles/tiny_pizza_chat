@@ -1,26 +1,33 @@
 body {
   margin: 0 auto;
+  display: block;
 }
 
 .container {
-  width: 800px;
+  width: 960px;
   height: 680px;
-  box_radius: 20px;
+  border_radius: 20px;
   background-color: blue;
-  text-align: center;
+  padding: 10px;
 }
 
 .forum {
-  width: 780px
-  background-color: white;
+  /* width: 950px; */
+  height: 600px;
+  color: white;
+  overflow: scroll;
+  padding:5px;
+  margin: 20px;
 }
 
 .message_box {
-  width: 780px;
-  height: 100px;
+  width: 960px;
+  /* height: 100px; */
   color: white;
   background-color: red;
   vertical-align: middle;
+  text-align: center;
+  padding: 10px;
 }
 
 ul {
@@ -31,4 +38,18 @@ ul {
 button {
   width: 200px;
    height : 30px;
+}
+
+#username {
+  margin-right: 20px;
+  text-align: left
+}
+
+#message {
+  text-align: left;
+}
+
+#ceatedAt {
+  align: right;
+  text-align: left;
 }
