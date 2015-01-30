@@ -2,7 +2,7 @@
   'use strict';
 
   var pizzaUrl = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
-
+  var userLogin = $(".login").val();
 
   $(document).ready(function() {
 
@@ -45,6 +45,19 @@
 
 });
 
+$('form').on('submit', function(event){
+$( userLogin ).toggleClass( div.login_page , addOrRemove );
+}
+
+
+// //toggle class//
+// $( "div.login_page" ).toggleClass( "chatroom" ),
+//
+// if ( addOrRemove ) {
+//   $( "userLogin" ).addClass(  );
+// } else {
+//   $( "#foo" ).removeClass( className );
+// }
 
 
 
