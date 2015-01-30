@@ -6,6 +6,18 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<div class="login_page">
+  <div class="login_box">
+    <h1>YOU WANT TO CHAT?...YOU WANT TO CHAT?...<br />YOU CAN'T HANDLE THE CHAT!</h1>
+    <h3>OK, you can chat, just log in and come on back nah ya hear!</h3>
+    <form>
+      <input class="login" type="text" placeholder="What's Your Name">
+      <input type="submit" value="Log In">
+    </form>
+  </div>
+</div>
+
+<div class="chatroom">
   <div class="message_box">
     <div class="welcome">
       <p>Welcome</p>
@@ -18,15 +30,17 @@
   <div class="container">
     <div class="forum">
     <ul class="tinyPizzaChatLog">
-      <script type="text/template" data-template-name="chat">
-        <li>
-        <id="message"><%= message %>
-          <id="username"><%= username %>
-          <id="createAt"><%= createdAt %>
-        </li>
-      </script>
     </ul>
+      <script type="text/template" data-template-name="chat">
+        <ul>
+          <li class="message"><%= message %></li>
+          <li class="username"><%= username %></li>
+          <li class="createAt"><%= createdAt %></li>
+        </ul>
+      </script>
+
   </div>
+</div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>

@@ -3,6 +3,18 @@ body {
   display: block;
 }
 
+.login_page {
+  width: 900px;
+  height: 200px;
+  text-align: center;
+  margin: 100px;
+  display: none;
+}
+
+.chatroom {
+  display: none;
+}
+
 .container {
   width: 960px;
   height: 680px;
@@ -40,16 +52,23 @@ button {
    height : 30px;
 }
 
-#username {
+.chat {
+
+}
+
+.username {
   margin-right: 20px;
-  text-align: left
-}
-
-#message {
   text-align: left;
+  display: inline;
 }
 
-#ceatedAt {
+.message {
+  text-align: left;
+  display: inline;
+}
+
+.ceatedAt {
   align: right;
   text-align: left;
+  display: inline;
 }
