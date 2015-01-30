@@ -8,12 +8,11 @@ body {
   height: 200px;
   text-align: center;
   margin: 100px;
-  display: none;
+  display: block;
 }
 
 .chatroom {
-  display: none;
-}
+  display: none;}
 
 .container {
   width: 960px;

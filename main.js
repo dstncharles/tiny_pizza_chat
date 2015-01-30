@@ -2,7 +2,8 @@
   'use strict';
 
   var pizzaUrl = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
-  var userLogin = $(".login").val();
+  var userLogin
+
 
   $(document).ready(function() {
 
@@ -29,25 +30,28 @@
 
   $('form').on('submit', function(event) {
     event.preventDefault();
-    var messageOutPut = $(".message").val()
-    // console.log(messageOutPut)
+    var messageOutPut = $(".message").val();
+    console.log(userLogin)
     $.ajax({
       url: "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats",
       type: "POST",
       data: {
-        message: messageOutPut
-        // username: "test",
+        message: messageOutPut,
+        username: userLogin,
         // createdAt: "test"
       }
-    })
+    });
 
 
 
 });
 
 $('form').on('submit', function(event){
-$( userLogin ).toggleClass( div.login_page , addOrRemove );
-}
+  userLogin = $(".login").val()
+  console.log(userLogin)
+$( ".login_page"  ).css( "display" , "none" );
+$( ".chatroom"  ).css( "display" , "block" );
+});
 
 
 // //toggle class//
