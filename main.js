@@ -1,17 +1,7 @@
 (function() {
   'use strict';
+
   var pizzaUrl = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
-
-
-// $.ajax({
-//   url: "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats",
-//   type: "POST",
-//   data: {
-//     message: "Hi!",
-//     username: "jacobsmith",
-//     createdAt: "Thu Jan 29 2015 13:34:05 GMT-0500 (EST)"
-//   }
-// })
 
 
   $(document).ready(function() {
@@ -33,11 +23,27 @@
 
   });
 
+  //-----------------
 
 
 
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    var messageOutPut = $(".message").val()
+    // console.log(messageOutPut)
+    $.ajax({
+      url: "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats",
+      type: "POST",
+      data: {
+        message: messageOutPut
+        // username: "test",
+        // createdAt: "test"
+      }
+    })
 
 
+
+});
 
 
 

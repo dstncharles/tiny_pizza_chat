@@ -9,8 +9,10 @@
   <div class="message_box">
     <div class="welcome">
       <p>Welcome</p>
-      <textarea cols="100" rows="4" name="comment"></textarea><br />
-      <button>Submit</button>
+      <form>
+        <input class="message" type="text" placeholder="Submit...">
+        <input type="submit" value="Search">
+      </form>
     </div>
   </div>
   <div class="container">
@@ -18,7 +20,7 @@
     <ul class="tinyPizzaChatLog">
       <script type="text/template" data-template-name="chat">
         <li>
-        <id="message">  <%= message %>
+        <id="message"><%= message %>
           <id="username"><%= username %>
           <id="createAt"><%= createdAt %>
         </li>
