@@ -35,13 +35,13 @@
         <ul class="dialogbox">
           <li class="username"><%= username %></li>
           <li class="message"><%= message %></li>
-          <li class="createAt"><%= createdAt %></li>
+          <li class="createAt"><%= moment(createdAt).fromNow() %></li>
         </ul>
       </script>
 
   </div>
 </div>
-
+    <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="main.js"></script>
