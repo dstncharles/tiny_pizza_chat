@@ -21,10 +21,12 @@ body {
   border_radius: 20px;
   background-color: #F25700;
   padding: 10px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .forum {
-  width: 950px;
+  width: 900px;
   height: 600px;
   color: white;
   overflow-y: auto;
@@ -41,12 +43,14 @@ body {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
+  position: relative;
 }
 
 ul {
-  padding: 0px;
-  text-decoration: none;
-  /* display: inline-block; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -59,9 +63,10 @@ button {
 }
 
 .dialogbox {
-  height: 100px;
+  /* height: 100px; */
   width: auto;
   border: 1px solid black;
+  padding: 20px;
 }
 
 .username {
@@ -69,7 +74,8 @@ button {
   /* float: left; */
   display: inline-block;
   height: 20px;
-  width: 200px;
+  width: 105px;
+  vertical-align: middle;
 
 }
 
@@ -78,13 +84,15 @@ button {
   /* float: left; */
   display: inline-block;
   height: 20px;
-  width: 250px;
+  width: 442px;
+  vertical-align: middle;
 }
 
-.ceatedAt {
+.createdAt {
   align: right;
   /* float: left; */
   display: inline-block;
   height: 20px;
-  width: 150px;
+  width: 126px;
+  vertical-align: middle;
 }
