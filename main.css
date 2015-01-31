@@ -9,6 +9,8 @@ body {
   text-align: center;
   margin: 100px;
   display: block;
+  margin: 0 auto;
+  position: relative;
 }
 
 .chatroom {
@@ -28,7 +30,7 @@ body {
 .forum {
   width: 900px;
   height: 600px;
-  color: white;
+  color: #135594;
   overflow-y: auto;
   overflow-x: hidden;
   padding:5px;
@@ -63,36 +65,38 @@ button {
 }
 
 .dialogbox {
-  /* height: 100px; */
+  height: auto;
   width: auto;
-  border: 1px solid black;
+  border: 1px solid #135594;
   padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .username {
   margin-right: 20px;
-  /* float: left; */
   display: inline-block;
-  height: 20px;
-  width: 105px;
+  height: auto;
+  width: 150px;
   vertical-align: middle;
 
 }
 
 .message {
   text-align: left;
-  /* float: left; */
   display: inline-block;
-  height: 20px;
-  width: 442px;
+  height: auto;
+  width: 500px;
   vertical-align: middle;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .createdAt {
   align: right;
-  /* float: left; */
   display: inline-block;
-  height: 20px;
-  width: 126px;
+  height: auto;
+  width: 150px;
   vertical-align: middle;
 }
