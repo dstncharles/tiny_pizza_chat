@@ -38,10 +38,11 @@
         // createdAt: "test"
       }
     });
-
-
-
 });
+
+
+
+////refresh page
 
 $('form').on('submit', function(event){
   userLogin = $(".login").val();
