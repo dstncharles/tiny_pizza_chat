@@ -78,7 +78,7 @@ button {
 .username {
   display: inline-block;
   height: auto;
-  width: 150px;
+  width: 200px;
   /* vertical-align: middle; */
 }
 
@@ -86,7 +86,7 @@ button {
   text-align: left;
   display: inline-block;
   height: auto;
-  width: 500px;
+  width: 480px;
   /* vertical-align: middle; */
   overflow-y: auto;
   overflow-x: hidden;
@@ -96,5 +96,6 @@ button {
   display: inline-block;
   height: auto;
   width: 150px;
+  text-align: right;
   /* vertical-align: middle; */
 }
