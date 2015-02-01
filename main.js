@@ -42,7 +42,7 @@
 
 
 
-////////////submit function and refresh page
+  ////////////submit function and refresh page
 
 
 
@@ -53,7 +53,11 @@
     $(".chatroom").css("display", "block");
     setInterval(function() {
       updateChat();
-    }, 5000);
+    }, 1000);
+    // .done(function(data) {
+    //   $list.empty();
+    //   console.log(pigs);
+    // });
   });
 
   function updateChat() {
